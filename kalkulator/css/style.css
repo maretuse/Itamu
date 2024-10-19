@@ -1,0 +1,127 @@
+/* Calculator CSS */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: #4e4e4e;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #4e4e4e;
+}
+
+.calculator {
+  background: #dd6f6f;
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px;
+  min-width: 300px;
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.4), 
+                4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  background: #ffffff;
+  min-height: 50px;
+  padding: 5px;
+  margin: 0 1px 10px;
+  border-radius: 0.25rem;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.output pre {
+  text-align: right;
+  font-size: 25px;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  width: 288px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.output pre::-webkit-scrollbar {
+  display: none;
+}
+
+.output #upper {
+  color: #424242;
+  font-size: 18px;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input button {
+  width: calc(25% - 24px);
+  height: 50px;
+  margin: 8px 12px;
+  border-radius: 50%;
+  background-color: #c05d5d;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+                1px 1px 5px rgba(94, 31, 31, 0.7);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.input button:hover {
+  background-color: #b35555;
+  transform: scale(1.1);
+  transition: transform 0.1s ease-in-out;
+}
+
+.input button:active {
+  transform: scale(1.0);
+  background-color: #a34545;
+  box-shadow: inset 1px 1px 5px rgba(94, 31, 31, 0.7),
+              inset -1px -1px 2px rgba(255, 255, 255, 0.3);
+  color: #642929;
+}
+
+.history {
+  background: #ffffff;
+  padding: 10px;
+  margin-top: 20px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.history h2 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.history li {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
